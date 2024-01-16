@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        body {
+    /* Set margin and padding to 0 */
+    overflow-x: hidden;
+  overflow-y: x;
+    margin: 0;
+    padding: 0;
+    /* Use sans-serif as the default font */
+    font-family: sans-rubik-light,sans-serif;;
+    /* Use flexbox for layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* 100% of viewport height */
+}
+
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            font-family: futura;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            height: 45px;
+            width: 130px;
+            color: white;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            background-color: green;
+            margin-left: 10px;
+            font-family: Poppins-SemiBold;
+            font-style: italic;
+        }
+
+        /* Your other styles... */
+        .image-container {
+            position: absolute; 
+            top: 10px; 
+            left: 10px; 
+            display: flex;
+            align-items: center; 
+        }
+
+        .image-container img {
+            margin-right: 10px; /* Add margin for spacing between images */
+        }
+
+        .salesforce {
+            position: absolute; 
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            margin-left: 570px;
+            height: 90px;
+            width: 90px;
+        }
+
+        /* Centered text input */
+        .centered-input {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            text-align: center; 
+        }
+
+        /* Style for the input */
+        .centered-input input[type="text"] {
+            height: 500px;
+            width: 1000px; 
+            background-color: rgb(16, 139, 38);
+            padding: 10px; 
+            box-sizing: border-box; 
+            color: white;
+            border-radius: 43px;
+            border: 0px;
+            
+        }
+
+         /* CSS to style the green box */
+    .green-box {
+        position: absolute;
+            top: 180px;
+            left: 50%; 
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 80%;
+            height: 450px; 
+            background-color: green;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+    }
+
+    /* CSS to style the image */
+    .image-in-box {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      max-width: 40%;
+      height: auto;
+    }
+
+    /* CSS to style the text on the right */
+    .text-on-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 50%;
+      font-family: 'Rubik', sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      font-style: normal;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    /* CSS to style the additional image at bottom-right */
+    .bottom-right-image {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      max-width: 45%; 
+      max-height: 80%; 
+      height: auto;
+      width: auto;
+      z-index: 1; 
+    }
+
+    /* CSS to style the submit button */
+    .Our-solution {
+        position: absolute;
+            bottom: 50px;
+            right: 300px;
+            z-index: 2;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white !important; /* Change the border color to white */
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: green;
+            height: 55px;
+            width: 200px;
+            border-radius: 32px;
+            font-family: futura;
+    }
+
+    /* CSS to style the additional submit button */
+    .Another-solution {
+        position: absolute;
+            bottom: 50px;
+            right: 65px;
+            z-index: 2;
+            padding: 10px 20px;
+            background-color: green; 
+            color: white;
+            border: 2px solid white !important; 
+            border-radius: 5px;
+            cursor: pointer;
+            height: 55px;
+            width: 200px;
+            font-family: futura;
+            border-radius: 32px;
+    }
+
+    .warp-video {
+            width: 100%;
+            max-width: 1000px; 
+            margin: 0 auto;
+            margin-top: 550px; 
+            overflow: hidden; 
+        }
+
+        .warp-video video {
+            width: calc(100% + 40px); 
+            margin-left: -20px; 
+            display: block;
+           
+        }
+
+
+
+/* calient and Customer style code starts HERE */
+
+
+ .customer p {
+    color: green;
+    font-size: auto;
+    font-weight: bold;
+    margin-left: 190px;
+}
+
+.customer p span {
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.customer .green-text {
+    color: green;
+}
+
+.customer .bigger-text {
+    font-size: 34px;
+    font-weight: bold;
+}
+.customer  .Unique_Value_Text {
+            color: #555555;
+            position: absolute;
+            top: 340px;
+            left: 370px;
+            font-size: 12px;
+            font-family: rubik-light,sans-serif;
+            margin-top: 870px;
+            margin-left: 350px;
+        }
+
+
+/* CLIENT AND CUSTOMER STYLE CODE ENDS HERE */
+
+
+
+/* what I can do DIV starts HERE*/
+
+.I_can_do {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+.I_can_do.what{
+    color: rgb(202, 28, 28);
+
+}        
+/* what I can do DIV Ends  HERE*/
+
+
+
+/* THREE images DIV STYLE starts HERE*/
+
+
+
+/* THREE images DIV STYLE ENDS HERE*/
+
+
+
+
+
+/* background_video Styling STARTS HERE*/
+
+     
+/* Updated CSS for background video */
+.background_video {
+    position: fixed;
+    margin-top: 2000px;
+    top: 0;
+ 
+    width: 100vw; /* Full width of the viewport */
+    height: calc(100vw / 1.77); /* Assuming a standard 16:9 aspect ratio (change the ratio if necessary) */
+    z-index: -1; /* Ensure it's behind other elements */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.background_video video {
+    width:80%; /* Occupy full width */
+    height: 80%; /* Occupy full height */
+    object-fit: cover; /* Maintain video aspect ratio and cover entire container */
+    border-radius: 70px;
+}
+
+.white_backgroud{
+           position: absolute;
+            top:130px;
+            left: 40%; 
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 790px;
+            height: 390px; 
+            background-color: rgb(255, 255, 255);
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+}
+.text-on-white{
+    
+         position: absolute; 
+         top: 20px; 
+        right: 20px;
+         width: 50%;
+         color: black;
+         font-family: 'Rubik', sans-serif; 
+         font-weight: normal; 
+         font-size: 14px; 
+         font-style: normal; 
+         text-decoration: none; 
+    letter-spacing: 0.01em; 
+
+}
+
+/* background_video Styling ENDS HERE*/
+/* CSS */
+
+
+
+
+/* CAPTIANS images Styling STARTS HERE*/
+.captain_images {
+    display: flex;
+    margin-top: 00px;
+    justify-content: space-around;
+    margin-left: 50px; /* Adjust this value as needed to move the images to the right */
+}
+
+.captain_images img {
+    margin-top: 180px;
+    height: 250px;
+    width: 250px;
+    margin: 0 40px; /* Add margin for spacing between images */
+    border-radius: 20px;
+}
+
+
+/* CAPTIANS images Styling ENDS HERE*/
+
+/*captains info styling Starts HEre*/
+.captain-info {
+  
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: serrubik-medium, sans-serif;
+    
+}
+
+.captain-info span {
+    color: black;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.captain-1 {
+    margin-left: 300px;
+}
+
+
+
+.captain-2 {
+    margin-left:180px ; /* Adjust the margin for captain-2 */
+}
+
+.captain-3 {
+    margin-left: 150px; /* Adjust the margin for captain-3 */
+}
+/*captain stylinfg ends Here*/
+
+/*Globe styling starts here*/
+.globe {
+    margin: 20px;
+    margin-top: 100px;
+  }
+  
+  /* Style for the globe image container */
+  .globe_image {
+    overflow: hidden; /* Clear the float */
+  }
+  
+  /* Style for the text content */
+  .globe_image p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+  
+  /* Style for the green text */
+  .globe_green {
+    color: rgb(16, 139, 78);
+    font-size: 55px;
+    font-weight: 500;
+  }
+  
+  /* Style for the long text */
+  .long {
+    color: black;
+    line-height: 2;
+    font-size: 22px;
+    font-weight: 200;
+  }
+  
+  /* Style for bold text within the long text */
+  .long span {
+    font-weight: bold;
+  }
+
+
+  /* Globe styling ENDS Here*/
+
+
+  /* hear SStyling starts HEre*/
+ /* styles.css */
+
+.hear {
+    height: 400px;
+    width: 1200px;
+    background-color: rgb(221, 222, 242);
+    border-radius: 15px;
+    margin-top: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+.white_boy {
+    background-color: white;
+    height: 290px;
+    width: 900px;
+    top: 70px;
+    margin-left: 150px;
+    border-radius: 33px;
+    position: absolute;
+}
+
+.white_boy img {
+    height: 120px;
+    margin-top: 80px;
+    margin-left: 50px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    float: left;
+}
+
+.white_boy span {
+    color: #555555;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.white_boy input[type="button"] {
+    height: 50px;
+    width: 240px;
+    border-radius: 32px;
+    font-size: 22px;
+    background-color: rgb(16, 139, 38);
+    color: white;
+    font-family: sans-serif;
+    margin-left: 130px;
+    border: 2px solid black !important;
+}
+ /* hear Styling starts HEre*/
+
+
+ /* Star Div Starts Here*/
+ .Star {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .Star img {
+            height: 90px;
+            width: 1200px;
+            border-radius: 20px;
+        }
+
+        .star_text {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(120, 195, 141);
+        }
+
+    /* star  Div ends here*/  
+    
+    
+    /* Style for final phase starts Here*/
+
+    .captain-info {
+  
+  color: green;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: serrubik-medium, sans-serif;
+  
+}
+
+.captain-info span {
+  color: black;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: lighter;
+}
+
+.captain-1 {
+  margin-left: 300px;
+}
+
+
+
+.captain-2 {
+  margin-left:180px ; /* Adjust the margin for captain-2 */
+}
+
+.captain-3 {
+  margin-left: 150px; /* Adjust the margin for captain-3 */
+}
+
+/*div final phase Ends Here */
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrapDrive</title>
+</head>
+<body>
+
+    <div>
+    <div class="image-container">
+        <img src="https://static.wixstatic.com/media/192e4e_12f8489b992b43a48f9fa8db600fc98f~mv2.png/v1/crop/x_0,y_235,w_1635,h_474/fill/w_240,h_66,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/WarpDrive%20Logo-01_edited.png" height="75px" width="150px">
+        <img src="https://static.wixstatic.com/media/7b27c1_2ba4feaf7084430180d8f7345c28615e~mv2.png/v1/fill/w_130,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Summit.png" class="salesforce" height="24px" width="25px">
+    </div>
+
+
+
+
+    <div class="button-container">
+        <input type="submit" value="contact me"  class="okay">
+
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:16ddbfa5-0b64-4076-b013-351ce5c69d85" target="_blank">
+        <input type="submit" value="Resume"  class="okay">
+    </a>
+    </div>
+
+    <div class="green-box">
+      <img class="image-in-box" src="https://static.wixstatic.com/media/0e328c_3bda67f7bcec402caa9d636a442c4e27~mv2.png/v1/crop/x_3,y_0,w_2997,h_1834/fill/w_718,h_466,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Header-text-11.png" alt="Green Box Image">
+      <div class="text-on-right">
+        <p><b>Welcome to WarpDrive!</b> 
+          We offer custom solutions for complex business
+           problems using cutting-edge technology. 
+           Our services are tailored to each client's specific needs, 
+          ensuring exceptional customer satisfaction.</p>
+    </div>
+
+
+    <img class="bottom-right-image" src="https://static.wixstatic.com/media/7b27c1_7bc62f02df8d4dc0960efc33149f9b22~mv2.png/v1/crop/x_0,y_0,w_900,h_444/fill/w_900,h_444,fp_0.50_0.50,q_90,enc_auto/New-Header.png" alt="Bottom Right Image">
+
+<a href="https://github.com/Patil-Abhishek23" target="_blank">
+    <input type="button" value="GIT-Hub" class="Our-solution" >
+</a>
+    <input type="button" value="ME" class="Another-solution">
+
+    <div class="warp-video">
+        <video autoplay muted >
+            <source src="https://video.wixstatic.com/video/7b27c1_ff0de6c4b24a45eeb90e48bb7cb3826a/720p/mp4/file.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    
+
+
+<!--All OUR CLIENTS AND FRIENDS DIV STARTS HERE-->
+
+<div class="customer">
+    <br>
+    <br>
+    <p>
+        <span>
+            To The 
+            <span class="green-text">Hiring Team</span>
+        </span>
+        <br>
+
+        <span class="green-text bigger-text">
+            warpster
+        </span>
+        <span class="Unique_Value_Text">Thanks to you, For Looking <br>Into My work</span>
+
+        <input type="submit" value="Need to add something" class="Unique_Value" style="background-color: green;margin-left: 350px; height: 40px;width: 200px;">
+
+    </p>
+    
+  
+</div>
+    <!--All OUR CLIENTS AND FRIENDS DIV ENDS HERE-->
+
+
+    <!--What I CAN DO STARTS HERE-->
+    <div class="I_can_do" style="margin-top: 100px;">
+
+
+        <span class="what" style="color: rgb(67, 67, 67);font-size: 48px;font-family: rubik-medium,sans-serif;">Here's what will I can do for <br>you</span>
+
+    </div>
+    <!--DIV What I CAN DO ENDS HERE-->
+
+
+
+
+     <!--DIV THREE IMAGES ENDS HERE-->
+<div calss="Three_Images" style="display: flex; justify-content: space-around; margin-top: 65px; border-radius: 100%;">
+
+
+    <div class="Advisory" style="margin-left: 10px;">
+        <img src="https://static.wixstatic.com/media/192e4e_f178a023a99b4acc90a255f4d94f88e7~mv2.png/v1/fill/w_306,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Section%202%20Elements-05.png" height="160px" style="margin-left: 48px;">
+
+        <span class="JAVA" style="color: black; font-size: -20px;" align="center">
+            <br style="color: green;" align=""><p style="color:green;font-size: 20px;" align="center" >Advisory</p>
+            <p style="font-size: 12px;line-height: 1;">Fast-track your automation journey
+                <br>
+                <br> with our customised blueprints and roadmaps 
+                <br>
+                <br>designed to address your specific needs.
+                <br>
+                <br> We give great advice</span>
+    </div>
+
+
+
+    <div class="Implementation" align="center">
+        <img src="https://static.wixstatic.com/media/192e4e_d49fbd93409845e8a7b550cabc1bc215~mv2.png/v1/fill/w_306,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Section%202%20Elements-06.png" height="160px"style="margin-left: 30px;">
+        <span class="HTML" style="color: black;"></span>
+
+        <p style="color: black; font-size: 20px; color: green;font-size: bold;">Implementation<br>
+            <p style="font-size: 12px;line-height: 1;color: black;line-height: 1.8;">We specialize in implementing 
+            <br>solutions and products that digitalize <br>
+            business processes and automate<br>
+            manual tasks, streamlining operations <br>
+            and increasing efficiency.</p>
+    </div>
+
+
+    
+    <div class="support" align="center">
+        <img src="https://static.wixstatic.com/media/192e4e_54a69ec75621466b9f10a777d46565a4~mv2.png/v1/fill/w_306,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Section%202%20Elements-07.png" height="160px"style="margin-left: 30px;">
+        <span class="HTML" style="color: black;"></span>
+
+        <p style="color: black; font-size: 20px; color: green;font-size: bold;">Support<br>
+            <p style="font-size: 12px;line-height: 1;color: black;line-height: 1.8;">We specialize in implementing 
+            <br>solutions and products that digitalize <br>
+            business processes and automate<br>
+            manual tasks, streamlining operations <br>
+            and increasing efficiency.</p>
+    </div>
+
+
+</div> 
+    <!--DIV THREE IMAGES ENDS HERE-->
+
+
+ <!--DIV BACKGROUND VIDEO STARTS HERE-->
+    <div class="background_video">
+        
+            <video  autoplay muted>
+                <source src="https://video.wixstatic.com/video/7b27c1_7e5ce163615348d2b2197803da21a746/1080p/mp4/file.mp4">
+            </video>
+
+        <div class="white_backgroud">
+
+            <p style="color: black; margin-top: 50px; font-size: 24px;">
+                Meet Our<br>
+
+                <span style="color: green; font-size: 40px;font-family: rubik-medium,sans-serif;font-weight: bold;">Superheroes</span>
+               
+               <span style="font-size: 16px;font-family: rubik-medium,sans-serif"> <br>
+                Our team of superheroes make the magic 
+                <br>
+                happen using a mix of innovation and value to 
+                <br>
+                create groundbreaking business solutions that
+                <br> help your organisation grow at warp speed.
+                <br> Over the years we have been able to build a 
+                <br>strong team of geniuses that lives with 
+                <br>one mantra in their heart
+                </span>
+            </p>
+
+            <div class="text-on-white" style="margin-top: 40px;">
+                <span class="happiness" style="color: green;font-size: 23px; margin-top: 400px;">"my happiness = 
+                    <br>being Warpster"</span> 
+                <br>
+                <span style="font-size: 16px;font-family: rubik-medium,sans-serif;line-height: 1.7;"> <br>
+                  We offer custom solutions for complex business
+                  <br>
+                   problems using cutting-edge technology.
+                   <br> 
+                   Our services are tailored to each client's specific needs, 
+                   <br>
+                  ensuring exceptional customer satisfaction.</p>
+                  </span>
+                  
+            </div>
+
+        </div> 
+
+    </div>
+     <!--DIV BACKGROUND VIDEO ENDS HERE-->
+
+<!--DIV For CAPTAINS STARTS Here-->
+
+<div class="CAPTAINS" style="margin-top: 800px;left:0px;right: 200px;">
+
+    <div class="captain_images" style="right: 00px;">
+        <div class="aye-aye">
+            <span style="color: black; font-size:50px;font-weight: 100;font-family: rubik-medium,sans-serif;">Aye Aye</span>
+            <br>
+            <span style="color: green;font-weight: bold;font-size: 60px;font-family: rubik-medium,sans-serif;">Captains</span>
+        </div>
+        <img src="https://static.wixstatic.com/media/7b27c1_605c75e770b744bdb9927e9b8ba6a1e6~mv2.jpg/v1/fill/w_508,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GitexAttendees-01.jpg" height="280px" width="280px">
+        
+
+        <img src="https://static.wixstatic.com/media/7b27c1_6dde65a7a40c4ac4888a76143b1ea95f~mv2.jpg/v1/fill/w_508,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GitexAttendees-03.jpg" height="280px" width="280px">
+
+        <img src="https://static.wixstatic.com/media/7b27c1_0656d253e7a64508b81f0417fa3e7643~mv2.jpg/v1/fill/w_508,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GitexAttendees-02.jpg" height="280px" width="280px">
+    </div>
+
+</div>
+
+<!--DIV For CAPTAINS ENDS Here-->
+
+
+<!--Div For The Captain INFO starts Here-->
+
+    <div class="Captain_info" style="display: flex;">
+        <p class="captain-info captain-1">Maulik Doshi
+            <br>
+            <span>Co-Founder & CEO</span>
+        </p>
+
+        <p class="captain-info captain-2">Praveen Louis
+            <br>
+            <span>Co-Founder & COO - 
+                <br>Solutions</span>
+        </p>
+
+        <p class="captain-info captain-3">Bharat Chopra
+            <br>
+            <span>Co-Founder & COO- 
+                <br>Professional Services</span>
+        </p>
+    </div>
+
+
+<!--Div For The Captain INFO ENDS Here-->
+
+
+<!--Div for globe starts HERE-->
+<div class="globe">
+
+    <div class="globe_image">
+
+      <img src="https://static.wixstatic.com/media/0e328c_6fb1b5ff2639441da78fcb45dc45eb5d~mv2.webp" height="400px" width="600px" style="float: right;">
+
+      <p style="color: black;font-size: 40px;font-weight: 300;">A global team solving
+
+        <br>
+        <span class="globe_green" style="color:rgb(16, 139, 78);font-size: 55px;font-weight: 500;">
+          global challenges!</span>
+        <p></p>
+
+        <br>
+
+        <span class="long" style="color: black;line-height: 2;font-size: 22px;font-weight: 200;">  
+
+          <span style="font-weight: bold;"> Our headquarters are in Bangalore,<br>
+            India.</span> At WarpDrive, we work from many <br>
+          locations with diverse people and have <br>
+          been remote-friendly even before the <br>
+          pandemic. :)
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+<!--Div for globe Ends HERE-->
+
+
+<!--Div for the happy starts HERE-->
+
+<div class="happy">
+
+    <div class="together" align="center">
+        <span class="journey" style="color: black;font-size: 40px;font-family:rubik-medium,sans-serif ;">Let’s journey together</span>
+    </div>
+
+
+    <div class="happy_images" align="center" style="margin: 20px 100px;">
+   
+        <img src="https://static.wixstatic.com/media/0e328c_e44084ffba2645fd80f8eab8c91e60a8~mv2.webp" height="300px" width="300px">
+
+        <img src="https://static.wixstatic.com/media/0e328c_9b7deff263cd4139ba00a2256db0e474~mv2.webp"height="300px" width="300px">
+
+        <img src="https://static.wixstatic.com/media/0e328c_81c7a5ddb826414c8cb5355e3d19f716~mv2.webp"height="300px" width="300px">
+    </div>
+
+    <p style="color: black;font-size: 23px;font-weight: 300;font-family:rubik-medium,sans-serif;margin-left: 150px;">Be a <span style="color: green;">
+        Happy Customer
+    </span>
+    <span style="color: #555555;margin-left: 90px;font-family: rubik-medium,sans-serif;">Be a 
+        <span style="color: green;">Happy Partner
+    </span> 
+    </span>
+
+    <span style="color: #555555;margin-left:90px;">Be a 
+        <span style="color: green;">Happy Warpster
+    </span> 
+    </span>
+
+    </p>
+
+</div>
+<!--Div for the happy ENDS HERE-->
+
+<!--Div Hear STARTS HERE-->
+
+<div class="hear">
+
+    <div class="white_boy">
+
+        <img src="https://static.wixstatic.com/media/0e328c_fa604126547c48e79e2675de0ee44f81~mv2.png/v1/crop/x_85,y_0,w_528,h_552/fill/w_168,h_176,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/noun-form-submission-4393418.png" height="120px">
+
+        <span>
+            I'd love to 
+            <br>hear from you!
+            <br>
+        </span>
+
+        <input type="button" value="Hear from you">
+
+    </div>
+
+</div>
+
+<!--DIV HEAR ENDS HERE-->
+
+
+
+
+<!--Star Div Starts Here-->
+<div class="Star">
+    <img src="https://static.wixstatic.com/media/0e328c_9b73e41c24a9419ba4864b3b0767dbb0~mv2.png/v1/fill/w_2800,h_200,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/WD%20BG2_Artboard%201.png"
+        height="90px" width="1200px" alt="snow">
+    <div class="star_text">
+        Better Together...Partnering for Success.
+    </div>
+</div>
+<!--Star Div Ends Here-->
+
+
+<!--Div For last pahse Starts Here-->
+
+<div class="last_phase" style="display: flex;">
+    <p class="about_me">Maulik Doshi
+        <br>
+        <span>Co-Founder & CEO</span>
+    </p>
+
+    <p class="our_solutions">Praveen Louis
+        <br>
+        <span>Co-Founder & COO - 
+            <br>Solutions</span>
+    </p>
+
+    <p class="paternship">Bharat Chopra
+        <br>
+        <span>Co-Founder & COO- 
+            <br>Professional Services</span>
+    </p>
+    <p class="our_culture">Bharat Chopra
+        <br>
+        <span>Co-Founder & COO- 
+            <br>Professional Services</span>
+    </p>
+</div>
+
+
+</div> <!--The Main DIV class ENDS HERE-->
+
+</body>
+</html>
