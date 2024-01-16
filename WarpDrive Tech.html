@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--STYLE TAG STARTS HERE-->
+
+    <style>
+        
+body {
+    overflow-x: hidden;
+    overflow-y: x;
+    margin: 0;
+    padding: 0;
+    font-family: sans-rubik-light,sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; 
+}
+
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            font-family: futura;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            height: 45px;
+            width: 130px;
+            color: white;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            background-color: green;
+            margin-left: 10px;
+            font-family: rubik-medium,sans-serif;
+        }
+
+        /* Your other styles... */
+        .image-container {
+            position: absolute; 
+            top: 10px; 
+            left: 10px; 
+            display: flex;
+            align-items: center; 
+        }
+        
+
+        .image-container img {
+            margin-right: 10px;
+        }
+
+        .salesforce {
+            position: absolute; 
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            margin-left: 570px;
+            height: 90px;
+            width: 90px;
+        }
+
+        /* Centered text input */
+        .centered-input {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            text-align: center; 
+        }
+
+        /* Style for the input */
+        .centered-input input[type="text"] {
+            height: 500px;
+            width: 1000px; 
+            background-color: rgb(16, 139, 38);
+            padding: 10px; 
+            box-sizing: border-box; 
+            color: white;
+            border-radius: 43px;
+            border: 0px;
+            
+        }
+
+         /* CSS to style the green box */
+    .green-box {
+        position: absolute;
+            top: 180px;
+            left: 50%; 
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 80%;
+            height: 450px; 
+            background-color: green;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+    }
+
+    /* CSS to style the image */
+    .image-in-box {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      max-width: 40%;
+      height: auto;
+    }
+
+    /* CSS to style the text on the right */
+    .text-on-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 50%;
+      font-family: 'Rubik', sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      font-style: normal;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    /* CSS to style the additional image at bottom-right */
+    .bottom-right-image {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      max-width: 45%; 
+      max-height: 80%; 
+      height: auto;
+      width: auto;
+      z-index: 1; 
+    }
+
+    /* CSS to style the submit button */
+    .Our-solution {
+        position: absolute;
+            bottom: 50px;
+            right: 300px;
+            z-index: 2;
+            padding: 10px 20px;
+   
+            color: white;
+            border: 2px solid white !important; 
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: green;
+            height: 55px;
+            width: 150px !important;
+            border-radius: 32px;
+          
+    }
+
+    /* CSS to style the additional submit button */
+    .Another-solution {
+            position: absolute;
+            bottom: 50px;
+            right: 65px;
+            z-index: 2;
+            padding: 10px 20px;
+            background-color: green; 
+            color: white;
+            border: 2px solid white !important; 
+            border-radius: 5px;
+            cursor: pointer;
+            height: 55px;
+            width: 150px !important;
+            font-family: futura;
+            border-radius: 32px;
+    }
+
+    .warp-video {
+            width: 1200px !important;
+            max-width: 1000px; 
+            margin: 0 auto;
+            margin-top: 550px; 
+            overflow: hidden; 
+        }
+
+        .warp-video video {
+            width: calc(100% + 40px); 
+            margin-left: -20px; 
+            display: block;
+           
+        }
+
+
+
+/* calient and Customer style code starts HERE */
+
+
+ .customer p {
+    color: green;
+    font-size: auto;
+    font-weight: bold;
+    margin-left: 190px;
+}
+
+.customer p span {
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.customer .green-text {
+    color: green;
+}
+
+.customer .bigger-text {
+    font-size: 34px;
+    font-weight: bold;
+}
+.customer  .Unique_Value_Text {
+            color: #555555;
+            position: absolute;
+            top: 340px;
+            left: 370px;
+            font-size: 12px;
+            font-family: rubik-light,sans-serif;
+            margin-top: 870px;
+            margin-left: 350px;
+        }
+
+
+/* CLIENT AND CUSTOMER STYLE CODE ENDS HERE */
+
+
+
+/* what I can do DIV starts HERE*/
+
+.I_can_do {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+.I_can_do.what{
+    color: rgb(202, 28, 28);
+
+}        
+/* what I can do DIV Ends  HERE*/
+
+
+
+/* THREE images DIV STYLE starts HERE*/
+
+
+.Advisory{
+    transition: 0.1s;
+
+}
+.Advisory:hover{
+    transform: translate(0px,-10px);
+}
+
+.Implementation{
+    transition: 0.1s;
+
+}
+.Implementation:hover{
+    transform: translate(0px,-10px);
+}
+
+.support{
+    transition: 0.1s;
+
+}
+.support:hover{
+    transform: translate(0px,-10px);
+}
+
+/* THREE images DIV STYLE ENDS HERE*/
+
+
+
+/* background_video Styling STARTS HERE*/ 
+.background_video {
+    position: fixed;
+    margin-top: 2000px;
+    top: 0;
+    width: 100vw; 
+    height: calc(100vw / 1.77); 
+    z-index: -1; 
+    overflow: hidden; 
+}
+
+.background_video video {
+    width:80%; 
+    height: 80%; 
+    object-fit: cover; 
+    border-radius: 70px;
+}
+
+.white_backgroud{
+           position: absolute;
+            top:130px;
+            left: 40%; 
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 790px;
+            height: 390px; 
+            background-color: rgb(255, 255, 255);
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+}
+.text-on-white{
+    
+         position: absolute; 
+         top: 50px; 
+        right: 20px;
+         width: 50%;
+         color: black;
+         font-family: 'Rubik', sans-serif; 
+         font-weight: normal; 
+         font-size: 14px; 
+         font-style: normal; 
+         text-decoration: none; 
+    letter-spacing: 0.01em; 
+
+}
+.happiness {
+    color: green;
+    font-size: 23px;
+    margin-top: 400px;
+}
+
+.problem-solving {
+    font-size: 16px;
+    font-family: rubik-medium, sans-serif;
+    line-height: 1.7;
+    font-weight: 200;
+}
+
+/* background_video Styling ENDS HERE*/
+
+
+/* CAPTIANS images Styling STARTS HERE*/
+.captain_images {
+    display: flex;
+    margin-top: 00px;
+    justify-content: space-around;
+    margin-left: 50px; 
+    transition: 0.1s;
+}
+
+.captain_images img {
+    margin-top: 180px;
+    height: 250px;
+    width: 250px;
+    margin: 0 40px; 
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.doshi:hover{
+    transform: translate(0px , -20px);
+    
+}
+
+.louis:hover{
+    transform: translate(0px , -20px);
+    
+}
+
+.bhatrath:hover{
+    transform: translate(0px , -20px);
+    
+}
+
+/* CAPTIANS images Styling ENDS HERE*/
+
+
+
+/*captains Info styling Starts HEre*/
+.captain-info {
+  
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: serrubik-medium, sans-serif;
+    
+}
+
+.captain-info span {
+    color: black;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.captain-1 {
+    margin-left: 300px;
+}
+
+.captain-2 {
+    margin-left:180px ; 
+}
+
+.captain-3 {
+    margin-left: 150px; 
+}
+/*CAPTAIN info styling ends Here*/
+
+
+/*Globe styling starts here*/
+.globe {
+    margin: 20px;
+    margin-top: 100px;
+  }
+  
+
+  .globe_image {
+    overflow: hidden; 
+  }
+  
+  
+  .globe_image p {
+    margin: 0; 
+  }
+  
+  
+  .globe_green {
+    color: rgb(16, 139, 78);
+    font-size: 55px;
+    font-weight: 500;
+  }
+  
+  
+  .long {
+    color: black;
+    line-height: 2;
+    font-size: 22px;
+    font-weight: 200;
+  }
+  
+ 
+  .long span {
+    font-weight: bold;
+  }
+
+  /* Globe styling ENDS Here*/
+
+
+  /* Happy_Images styling ENDS Here*/
+.happy_images{
+    transition: all 0.1s,ease-in-out 0s;
+
+}
+.client2:hover{
+    transform: translate(0px , -15px);
+    
+}
+
+.employee:hover{
+    transform: translate(0px , -15px);
+    
+}
+
+.warpSTER:hover{
+    transform: translate(0px , -15px);
+    
+}
+
+
+  /* Happy_Images ENDS Here*/
+
+
+  /*  Styling For HEAR starts Here*/
+
+.hear {
+    height: 400px;
+    width: 1200px;
+    background-color: rgb(221, 222, 242);
+    border-radius: 15px;
+    margin-top: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+.white_box2 {
+    background-color: white;
+    height: 290px;
+    width: 900px;
+    top: 70px;
+    margin-left: 150px;
+    border-radius: 33px;
+    position: absolute;
+}
+
+.white_box2 img {
+    height: 120px;
+    margin-top: 80px;
+    margin-left: 50px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    float: left;
+    
+}
+
+.white_box2 span {
+    color: #555555;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.white_box2 input[type="button"] {
+    height: 50px;
+    width: 240px;
+    border-radius: 32px;
+    font-size: 22px;
+    margin-left: 130px;
+   
+   
+}
+ /* hear Styling starts HERE*/
+
+
+ /* Star Div Starts Here*/
+ .Star {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .Star img {
+            height: 90px;
+            width: 1200px;
+            border-radius: 20px;
+        }
+
+        .star_text {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(120, 195, 141);
+        }
+
+    /* star  Div ends here*/  
+    
+    
+    /* Style for final phase starts Here*/
+
+    .last_phase {
+  
+  color: green;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: serrubik-medium, sans-serif;
+  
+}
+
+.about_me {
+  margin-left: 140px;
+}
+
+.our_solutions {
+  margin-left: 140px; 
+}
+
+.paternship{
+  margin-left: 140px; 
+}
+
+.our_culture{
+  margin-left:140px ; 
+}
+/*div final phase Ends Here*/
+
+
+
+/* Div for Social Media Starts Here*/
+.Social_media {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+/* Div for Social Media Ends Here*/
+
+
+
+/* Style for Rights Starts here*/
+.Rights p{
+font-size: 12px;
+color: black;
+}
+/* Style for Rights Ends here*/
+
+
+ </style>
+
+<!--THE STYLE TAG ENDS HERE-->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrapDrive</title>
+</head>
+<body>
+
+    <div>
+    <div class="image-container">
+        <img src="https://static.wixstatic.com/media/192e4e_12f8489b992b43a48f9fa8db600fc98f~mv2.png/v1/crop/x_0,y_235,w_1635,h_474/fill/w_240,h_66,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/WarpDrive%20Logo-01_edited.png" height="75px" width="150px">
+        <img src="https://static.wixstatic.com/media/7b27c1_2ba4feaf7084430180d8f7345c28615e~mv2.png/v1/fill/w_130,h_148,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Summit.png" class="salesforce" height="24px" width="25px">
+    </div>
+
+
+
+
+    <div class="button-container">
+
+        <a href="mailto:abhishekpatil2324@gmail.com" target="_self">
+        <input type="button" value="contact me"  class="okay">
+</a>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:16ddbfa5-0b64-4076-b013-351ce5c69d85" target="_blank">
+        <input type="button" value="Resume"  class="okay">
+    </a>
+    </div>
+
+    <div class="green-box">
+      <img class="image-in-box" src="https://static.wixstatic.com/media/0e328c_3bda67f7bcec402caa9d636a442c4e27~mv2.png/v1/crop/x_3,y_0,w_2997,h_1834/fill/w_718,h_466,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Header-text-11.png" alt="Green Box Image">
+      <div class="text-on-right">
+        <p>
+        <span style="font-size: 24px;"><b>Hey WarpDrive Crew! </b>
+         </span>
+         <br>
+           <span style="line-height: 1.8;font-size: 18px;font-weight: 200;">In the vast galaxy of programming languages,
+            Java, is my lightsaber, elegantly slashes through complexity. HTML and CSS, my artistic brushes, 
+            paint stunning interfaces on the digital canvas.
+             RDBMS orchestrates data in perfect harmony, a gravitational force binding it all. 
+             Enter OOP, the magic weaving classes into the code's fabric. 
+             Together, they sculpt a website beyond ordinary, 
+             a celestial masterpiece..
+        </span>
+            </p>
+    </div>
+
+
+    <img class="bottom-right-image" src="https://static.wixstatic.com/media/7b27c1_7bc62f02df8d4dc0960efc33149f9b22~mv2.png/v1/crop/x_0,y_0,w_900,h_444/fill/w_900,h_444,fp_0.50_0.50,q_90,enc_auto/New-Header.png" alt="Bottom Right Image">
+
+<a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:16ddbfa5-0b64-4076-b013-351ce5c69d85" target="_blank">
+    <input type="button" value="Resume" class="Our-solution" >
+</a>
+
+   <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:fa3b43a9-aa84-4229-828b-6336fe2ec325" target="_blank">
+    <input type="button" value="Projects" class="Another-solution">
+</a>
+    <div class="warp-video">
+        <video autoplay muted >
+            <source src="https://video.wixstatic.com/video/7b27c1_ff0de6c4b24a45eeb90e48bb7cb3826a/720p/mp4/file.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    
+
+
+<!--All OUR CLIENTS AND FRIENDS DIV STARTS HERE-->
+
+<div class="customer">
+    <br>
+    <br>
+    <p>
+        <span>
+            To The 
+            <span class="green-text">Hiring Team</span>
+        </span>
+        <br>
+
+        <span class="green-text bigger-text">
+            warpster
+        </span>
+        <span class="Unique_Value_Text">Thanks to you, For Looking <br>Into My work</span>
+
+        <a href="https://github.com/Patil-Abhishek23" target="_blank">
+        <input type="button" value="GIT-HUB" class="Unique_Value" style="margin-left: 350px; height: 40px;width: 200px;">
+</a>
+    </p>
+    
+  
+</div>
+    <!--All OUR CLIENTS AND FRIENDS DIV ENDS HERE-->
+
+
+    <!--What I CAN DO STARTS HERE-->
+    <div class="I_can_do" style="margin-top: 100px;">
+
+
+        <span class="what" style="color: rgb(67, 67, 67);font-size: 48px;font-family: rubik-medium,sans-serif;">Here's what will I can do for <br>you</span>
+
+    </div>
+    <!--DIV What I CAN DO ENDS HERE-->
+
+
+
+
+     <!--DIV THREE IMAGES ENDS HERE-->
+<div calss="Three_Images" style="display: flex; justify-content: space-around; margin-top: 65px; border-radius: 100%;">
+
+
+    <div class="Advisory" style="margin-left: 10px;">
+        <img src="https://static.wixstatic.com/media/192e4e_f178a023a99b4acc90a255f4d94f88e7~mv2.png/v1/fill/w_306,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Section%202%20Elements-05.png" height="160px" style="margin-left: 48px;">
+
+        <span class="JAVA" style="color: black; font-size: 55px;" align="center">
+            <br style="color: green;" align="center"><p style="color:green;font-size: 25px;" align="center" >Java programming</p>
+            <p style="font-size: 13px;line-height:0.9;">coding adventure with the 
+                foundational
+                <br>
+                <br> principles of Java programming,from
+                <br>
+                <br>variables to loops,our 
+                crash course equips the
+                <br>
+                <br>  essential tools of java galaxy</span>
+    </div>
+   
+
+
+    <div class="Implementation" align="center">
+        <img src="https://static.wixstatic.com/media/192e4e_d49fbd93409845e8a7b550cabc1bc215~mv2.png/v1/fill/w_306,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Section%202%20Elements-06.png" height="160px">
+        <span class="HTML" style="color: black;"></span>
+
+        <p style="color: black; font-size: 25px; color: green;"> OOPs Concepts<br>
+            <p style="font-size: 13px;line-height: 1;color: black;line-height: 1.8;justify-content: center;">Proficient in Object-Oriented Programming (OOP)
+            <br> specialize in implementing solutions <br>
+             to digitalize business processes<br>
+            automate manual tasks, and streamline operations,<br>
+            enhancing overall efficiency.</p>
+    </div>
+
+
+    
+    <div class="support" align="center">
+        <img src="https://static.wixstatic.com/media/192e4e_54a69ec75621466b9f10a777d46565a4~mv2.png/v1/fill/w_306,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Section%202%20Elements-07.png" height="160px">
+        <span class="HTML" style="color: black;"></span>
+
+        <p style="color: black; font-size: 25px; color: green;">Front-End<br>
+            <p style="font-size: 12px;line-height: 1;color: black;line-height: 1.8;">Dive into the whimsical world of HTML and CSS magic!  
+            <br>My code waltzes through web pages, <br>
+            Turning them into visual symphonies.<br>
+            Forget bland, say hello to a digital <br>
+            carnival of colors and styles</p>
+    </div>
+
+
+</div> 
+    <!--DIV THREE IMAGES ENDS HERE-->
+
+
+ <!--DIV BACKGROUND VIDEO STARTS HERE-->
+    <div class="background_video">
+        
+            <video  autoplay muted>
+                <source src="https://video.wixstatic.com/video/7b27c1_7e5ce163615348d2b2197803da21a746/1080p/mp4/file.mp4">
+            </video>
+
+        <div class="white_backgroud">
+
+            <p style="color: black; margin-top: 35px; font-size: 24px;">
+                Bonjour<br>
+
+                <span style="color: green; font-size: 40px;font-family: rubik-medium,sans-serif;font-weight: bold;">Superheroes</span>
+               
+               <span style="font-size: 16px;font-family: rubik-medium,sans-serif;font-weight: 100;"> <br>
+                I am Ready to join the league of tech superheroes,  
+                <br>
+                I bring my coding cape to contribute Innovative
+                <br>
+                solutions and propel our projects at warp speed
+                <br> Aligning with the genius squad, I adopt their 
+                <br> growth mantra,gearing up to infuse my skills
+                <br>into creating the next tech marvels.  
+                <br>I'm ready to collaborate and learn on this journey.
+                </span>
+            </p>
+
+            <div class="text-on-white">
+                <span class="happiness">"My Happiness = 
+                    <br>Being Warpster"</span> 
+                <br>
+                <span class="problem-solving"> <br>
+                    Adept at systematic problem-solving, I bring analytical thinking and a proactive attitude as a fresher.
+                     Eager to contribute positively to the team, I'm ready to absorb knowledge and apply innovative solutions,
+                     I am committed to making a meaningful impact as a budding professional.
+                </span>
+            </div>
+
+        </div> 
+
+    </div>
+     <!--DIV BACKGROUND VIDEO ENDS HERE-->
+
+<!--DIV For CAPTAINS STARTS Here-->
+
+<div class="CAPTAINS" style="margin-top: 800px;left:0px;right: 200px;">
+
+    <div class="captain_images" style="right: 00px;">
+        <div class="aye-aye">
+            <span style="color: black; font-size:50px;font-weight: 100;font-family: rubik-medium,sans-serif;">Aye Aye</span>
+            <br>
+            <span style="color: green;font-weight: bold;font-size: 60px;font-family: rubik-medium,sans-serif;">Captains</span>
+        </div>
+        <img src="https://static.wixstatic.com/media/7b27c1_605c75e770b744bdb9927e9b8ba6a1e6~mv2.jpg/v1/fill/w_508,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GitexAttendees-01.jpg" height="280px" width="280px" class="doshi">
+        
+
+        <img src="https://static.wixstatic.com/media/7b27c1_6dde65a7a40c4ac4888a76143b1ea95f~mv2.jpg/v1/fill/w_508,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GitexAttendees-03.jpg" height="280px" width="280px" class="louis">
+
+        <img src="https://static.wixstatic.com/media/7b27c1_0656d253e7a64508b81f0417fa3e7643~mv2.jpg/v1/fill/w_508,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GitexAttendees-02.jpg" height="280px" width="280px" class="bhatrath">
+    </div>
+
+</div>
+
+<!--DIV For CAPTAINS ENDS Here-->
+
+
+<!--Div For The Captain INFO starts Here-->
+
+    <div class="Captain_info" style="display: flex;">
+        <p class="captain-info captain-1">Maulik Doshi
+            <br>
+            <span>Co-Founder & CEO</span>
+        </p>
+
+        <p class="captain-info captain-2">Praveen Louis
+            <br>
+            <span>Co-Founder & COO - 
+                <br>Solutions</span>
+        </p>
+
+        <p class="captain-info captain-3">Bharat Chopra
+            <br>
+            <span>Co-Founder & COO- 
+                <br>Professional Services</span>
+        </p>
+    </div>
+
+
+<!--Div For The Captain INFO ENDS Here-->
+
+
+<!--Div for globe starts HERE-->
+<div class="globe">
+
+    <div class="globe_image">
+
+      <img src="https://static.wixstatic.com/media/0e328c_6fb1b5ff2639441da78fcb45dc45eb5d~mv2.webp" height="400px" width="600px" style="float: right;">
+
+      <p style="color: black;font-size: 40px;font-weight: 300;">A global team solving
+
+        <br>
+        <span class="globe_green" style="color:rgb(16, 139, 78);font-size: 55px;font-weight: 500;">
+          global challenges!</span>
+        <p></p>
+
+        <br>
+
+        <span class="long" style="color: black;line-height: 2;font-size: 22px;font-weight: 200;">  
+
+          <span style="font-weight: bold;"> Our headquarters are in Bangalore,<br>
+            India.</span> At WarpDrive, we work from many <br>
+          locations with diverse people and have <br>
+          been remote-friendly even before the <br>
+          pandemic. :)
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+<!--Div for globe Ends HERE-->
+
+
+<!--Div for the happy starts HERE-->
+
+<div class="happy">
+
+    <div class="together" align="center">
+        <span class="journey" style="color: black;font-size: 40px;font-family:rubik-medium,sans-serif ;">Let’s journey together</span>
+    </div>
+
+
+    <div class="happy_images" align="center" style="margin: 20px 100px;">
+
+        
+        <img src="https://static.wixstatic.com/media/0e328c_e44084ffba2645fd80f8eab8c91e60a8~mv2.webp" height="300px" width="300px" class="client2">
+
+        <img src="https://static.wixstatic.com/media/0e328c_9b7deff263cd4139ba00a2256db0e474~mv2.webp"height="300px" width="300px" class="employee">
+
+        <img src="https://static.wixstatic.com/media/0e328c_81c7a5ddb826414c8cb5355e3d19f716~mv2.webp"height="300px" width="300px" class="warpSTER">
+    </div>
+
+    <p style="color: black;font-size: 23px;font-weight: 300;font-family:rubik-medium,sans-serif;margin-left: 150px;">Be a <span style="color: green;">
+        Happy Customer
+    </span>
+    <span style="color: #555555;margin-left: 90px;font-family: rubik-medium,sans-serif;">Be a 
+        <span style="color: green;">Happy Partner
+    </span> 
+    </span>
+
+    <span style="color: #555555;margin-left:90px;">Be a 
+        <span style="color: green;">Happy Warpster
+    </span> 
+    </span>
+
+    </p>
+
+</div>
+<!--Div for the happy ENDS HERE-->
+
+<!--Div Hear STARTS HERE-->
+
+<div class="hear">
+
+    <div class="white_box2">
+
+        <img src="https://static.wixstatic.com/media/0e328c_fa604126547c48e79e2675de0ee44f81~mv2.png/v1/crop/x_85,y_0,w_528,h_552/fill/w_168,h_176,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/noun-form-submission-4393418.png" height="120px">
+
+        <span>
+            I'd love to 
+            <br>hear from you!
+            <br>
+        </span>
+        <a href="mailto:abhishekpatil2324@gmail.com">
+        <input type="button" value="Mail Me">
+</a>
+    </div>
+
+</div>
+
+<!--DIV HEAR ENDS HERE-->
+
+
+
+
+<!--Star Div Starts Here-->
+<div class="Star">
+    <img src="https://static.wixstatic.com/media/0e328c_9b73e41c24a9419ba4864b3b0767dbb0~mv2.png/v1/fill/w_2800,h_200,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/WD%20BG2_Artboard%201.png"
+        height="90px" width="1200px" alt="snow">
+    <div class="star_text">
+        Better Together...Partnering for Success.
+    </div>
+</div>
+<!--Div Star ENDS Here-->
+
+
+<!--Div For Last_Phase Starts Here-->
+
+<div class="last_phase" style="display: flex;text-align: center;">
+
+    <a href="https://www.linkedin.com/in/abhishek-patil-a6a283240" target="_blank" style="text-decoration: none;color: green;">
+    <p class="about_me">Linkdin</p>
+    </a>
+
+
+    <a href="https://github.com/Patil-Abhishek23" target="_blank" style="text-decoration: none;color: green;">
+    <p class="our_solutions">Git-Hub</p>
+    </a>
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:bf9964c8-e179-4295-98d4-fc7dcfeee1b2" target="_blank" style="text-decoration: none;color: green;">
+        <p class="our_culture">Academics</p>
+        </a>
+
+    <a href="https://www.warpdrivetech.in/" style="text-decoration: none;color: green;" target="_blank">
+    <p class="paternship">Official Page</p>
+    </a>
+
+  
+</div>
+<!--Div For Last_Phase ENDS Here-->
+
+<!--social Media Starts Here-->
+<div class="Social_media">
+    <a href="https://www.linkedin.com/company/warp-drive-tech/" target="_blank">
+        <img src="https://static.wixstatic.com/media/aa0402eb9ba2430d9d0620b59556efca.png/v1/fill/w_64,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aa0402eb9ba2430d9d0620b59556efca.png" height="30px" width="30px" style="margin-left:480px;">
+    </a>
+
+    <a href="https://www.facebook.com/WarpDriveTech/" target="_blank">
+        <img src="https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_64,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4057345bcf57474b96976284050c00df.png" height="30px" width="30px" style="margin-left: 20px;"
+    </a>
+
+    <a href="https://www.instagram.com/warpdrivetechworks/" target="_blank">
+        <img src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_64,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png" height="30px" width="30px" style="margin-left: 20px;">
+    </a>
+    
+    <a href="https://www.warpdrivetech.in/" target="_blank">
+        <img src="https://scontent.fblr4-1.fna.fbcdn.net/v/t39.30808-6/279244304_1480221602372503_2276121066581849980_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=ExOKQhmBvOYAX9oCkNs&_nc_ht=scontent.fblr4-1.fna&oh=00_AfC25nzV3ENKdAgn-AUibWuofuiRZcFOs001pLV8DWX8PA&oe=65A8A67C" height="30px" width="30px" style="margin-left:20px;border-radius: 100%;">
+    </a>
+
+</div>
+
+<!--social Media Ends Here-->
+
+<!--Div for RIGHTS Starts Here-->
+<div class="Rights" align="center">
+    <p>© 2023  WarpDrive Tech Works LLP | All rights reserved</p>
+</div>
+<!--Div For Rights Ends Here-->
+
+
+</div>
+ <!--The Main DIV class ENDS HERE-->
+
+</body>
+</html>
