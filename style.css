@@ -1,0 +1,600 @@
+body {
+    overflow-x: hidden;
+    overflow-y: x;
+    margin: 0;
+    padding: 0;
+    font-family: sans-rubik-light,sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; 
+}
+
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            font-family: futura;
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            height: 45px;
+            width: 130px;
+            color: white;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            background-color: green;
+            margin-left: 10px;
+            font-family: rubik-medium,sans-serif;
+        }
+
+        /* Your other styles... */
+        .image-container {
+            position: absolute; 
+            top: 10px; 
+            left: 10px; 
+            display: flex;
+            align-items: center; 
+        }
+        
+
+        .image-container img {
+            margin-right: 10px;
+        }
+
+        .salesforce {
+            position: absolute; 
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            margin-left: 570px;
+            height: 90px;
+            width: 90px;
+        }
+
+        /* Centered text input */
+        .centered-input {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            text-align: center; 
+        }
+
+        /* Style for the input */
+        .centered-input input[type="text"] {
+            height: 500px;
+            width: 1000px; 
+            background-color: rgb(16, 139, 38);
+            padding: 10px; 
+            box-sizing: border-box; 
+            color: white;
+            border-radius: 43px;
+            border: 0px;
+            
+        }
+
+         /* CSS to style the green box */
+    .green-box {
+        position: absolute;
+            top: 180px;
+            left: 50%; 
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 80%;
+            height: 450px; 
+            background-color: green;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+    }
+
+    /* CSS to style the image */
+    .image-in-box {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      max-width: 40%;
+      height: auto;
+    }
+
+    /* CSS to style the text on the right */
+    .text-on-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 50%;
+      font-family: 'Rubik', sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      font-style: normal;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    /* CSS to style the additional image at bottom-right */
+    .bottom-right-image {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      max-width: 45%; 
+      max-height: 80%; 
+      height: auto;
+      width: auto;
+      z-index: 1; 
+    }
+
+    /* CSS to style the submit button */
+    .Our-solution {
+        position: absolute;
+            bottom: 50px;
+            right: 300px;
+            z-index: 2;
+            padding: 10px 20px;
+   
+            color: white;
+            border: 2px solid white !important; 
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: green;
+            height: 55px;
+            width: 150px !important;
+            border-radius: 32px;
+          
+    }
+
+    /* CSS to style the additional submit button */
+    .Another-solution {
+            position: absolute;
+            bottom: 50px;
+            right: 65px;
+            z-index: 2;
+            padding: 10px 20px;
+            background-color: green; 
+            color: white;
+            border: 2px solid white !important; 
+            border-radius: 5px;
+            cursor: pointer;
+            height: 55px;
+            width: 150px !important;
+            font-family: futura;
+            border-radius: 32px;
+    }
+
+    .warp-video {
+            width: 1200px !important;
+            max-width: 1000px; 
+            margin: 0 auto;
+            margin-top: 550px; 
+            overflow: hidden; 
+        }
+
+        .warp-video video {
+            width: calc(100% + 40px); 
+            margin-left: -20px; 
+            display: block;
+           
+        }
+
+
+
+/* calient and Customer style code starts HERE */
+
+
+ .customer p {
+    color: green;
+    font-size: auto;
+    font-weight: bold;
+    margin-left: 190px;
+}
+
+.customer p span {
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.customer .green-text {
+    color: green;
+}
+
+.customer .bigger-text {
+    font-size: 34px;
+    font-weight: bold;
+}
+.customer  .Unique_Value_Text {
+            color: #555555;
+            position: absolute;
+            top: 340px;
+            left: 370px;
+            font-size: 12px;
+            font-family: rubik-light,sans-serif;
+            margin-top: 870px;
+            margin-left: 350px;
+        }
+
+
+/* CLIENT AND CUSTOMER STYLE CODE ENDS HERE */
+
+
+
+/* what I can do DIV starts HERE*/
+
+.I_can_do {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+.I_can_do.what{
+    color: rgb(202, 28, 28);
+
+}        
+/* what I can do DIV Ends  HERE*/
+
+
+
+/* THREE images DIV STYLE starts HERE*/
+
+
+.Advisory{
+    transition: 0.1s;
+
+}
+.Advisory:hover{
+    transform: translate(0px,-10px);
+}
+
+.Implementation{
+    transition: 0.1s;
+
+}
+.Implementation:hover{
+    transform: translate(0px,-10px);
+}
+
+.support{
+    transition: 0.1s;
+
+}
+.support:hover{
+    transform: translate(0px,-10px);
+}
+
+/* THREE images DIV STYLE ENDS HERE*/
+
+
+
+/* background_video Styling STARTS HERE*/ 
+.background_video {
+    position: fixed;
+    margin-top: 2000px;
+    top: 0;
+    width: 100vw; 
+    height: calc(100vw / 1.77); 
+    z-index: -1; 
+    overflow: hidden; 
+}
+
+.background_video video {
+    width:80%; 
+    height: 80%; 
+    object-fit: cover; 
+    border-radius: 70px;
+}
+
+.white_backgroud{
+           position: absolute;
+            top:130px;
+            left: 40%; 
+            transform: translateX(-50%);
+            max-width: 1200px;
+            width: 790px;
+            height: 390px; 
+            background-color: rgb(255, 255, 255);
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+}
+.text-on-white{
+    
+         position: absolute; 
+         top: 50px; 
+        right: 20px;
+         width: 50%;
+         color: black;
+         font-family: 'Rubik', sans-serif; 
+         font-weight: normal; 
+         font-size: 14px; 
+         font-style: normal; 
+         text-decoration: none; 
+    letter-spacing: 0.01em; 
+
+}
+.happiness {
+    color: green;
+    font-size: 23px;
+    margin-top: 400px;
+}
+
+.problem-solving {
+    font-size: 16px;
+    font-family: rubik-medium, sans-serif;
+    line-height: 1.7;
+    font-weight: 200;
+}
+
+/* background_video Styling ENDS HERE*/
+
+
+/* CAPTIANS images Styling STARTS HERE*/
+.captain_images {
+    display: flex;
+    margin-top: 00px;
+    justify-content: space-around;
+    margin-left: 50px; 
+    transition: 0.1s;
+}
+
+.captain_images img {
+    margin-top: 180px;
+    height: 250px;
+    width: 250px;
+    margin: 0 40px; 
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.doshi:hover{
+    transform: translate(0px , -20px);
+    
+}
+
+.louis:hover{
+    transform: translate(0px , -20px);
+    
+}
+
+.bhatrath:hover{
+    transform: translate(0px , -20px);
+    
+}
+
+/* CAPTIANS images Styling ENDS HERE*/
+
+
+
+/*captains Info styling Starts HEre*/
+.captain-info {
+  
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: serrubik-medium, sans-serif;
+    
+}
+
+.captain-info span {
+    color: black;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.captain-1 {
+    margin-left: 300px;
+}
+
+.captain-2 {
+    margin-left:180px ; 
+}
+
+.captain-3 {
+    margin-left: 150px; 
+}
+/*CAPTAIN info styling ends Here*/
+
+
+/*Globe styling starts here*/
+.globe {
+    margin: 20px;
+    margin-top: 100px;
+  }
+  
+
+  .globe_image {
+    overflow: hidden; 
+  }
+  
+  
+  .globe_image p {
+    margin: 0; 
+  }
+  
+  
+  .globe_green {
+    color: rgb(16, 139, 78);
+    font-size: 55px;
+    font-weight: 500;
+  }
+  
+  
+  .long {
+    color: black;
+    line-height: 2;
+    font-size: 22px;
+    font-weight: 200;
+  }
+  
+ 
+  .long span {
+    font-weight: bold;
+  }
+
+  /* Globe styling ENDS Here*/
+
+
+  /* Happy_Images styling ENDS Here*/
+
+.client2:hover{
+    transition:0.3s;
+    transform: translate(0px , -15px);
+    
+}
+
+.employee:hover{
+    ransition:0.3s;
+    transform: translate(0px , -15px);
+    
+}
+
+.warpSTER:hover{
+    ransition:0.3s;
+    transform: translate(0px , -15px);
+    
+}
+
+
+  /* Happy_Images ENDS Here*/
+
+
+  /*  Styling For HEAR starts Here*/
+
+.hear {
+    height: 400px;
+    width: 1200px;
+    background-color: rgb(221, 222, 242);
+    border-radius: 15px;
+    margin-top: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+.white_box2 {
+    background-color: white;
+    height: 290px;
+    width: 900px;
+    top: 70px;
+    margin-left: 150px;
+    border-radius: 33px;
+    position: absolute;
+}
+
+.white_box2 img {
+    height: 120px;
+    margin-top: 80px;
+    margin-left: 50px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    float: left;
+    
+}
+
+.white_box2 span {
+    color: #555555;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.white_box2 input[type="button"] {
+    height: 50px;
+    width: 240px;
+    border-radius: 32px;
+    font-size: 22px;
+    margin-left: 130px;
+   
+   
+}
+ /* hear Styling starts HERE*/
+
+
+ /* Star Div Starts Here*/
+ .Star {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .Star img {
+            height: 90px;
+            width: 1200px;
+            border-radius: 20px;
+        }
+
+        .star_text {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            font-size: 35px;
+            font-weight: bold;
+            color: rgb(120, 195, 141);
+        }
+
+    /* star  Div ends here*/  
+    
+    
+    /* Style for final phase starts Here*/
+
+    .last_phase {
+  
+  color: green;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: serrubik-medium, sans-serif;
+  
+}
+
+.about_me {
+  margin-left: 140px;
+}
+
+.our_solutions {
+  margin-left: 140px; 
+}
+
+.paternship{
+  margin-left: 140px; 
+}
+
+.our_culture{
+  margin-left:140px ; 
+}
+/*div final phase Ends Here*/
+
+
+
+/* Div for Social Media Starts Here*/
+.Social_media {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+/* Div for Social Media Ends Here*/
+
+
+
+/* Style for Rights Starts here*/
+.Rights p{
+font-size: 12px;
+color: black;
+}
+/* Style for Rights Ends here*/
+
